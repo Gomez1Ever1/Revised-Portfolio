@@ -1,0 +1,63 @@
+#main-bio{
+    margin-top:65px;
+}
+#firstbio{
+    padding:10px;
+}
+footer{
+  background-color:black;
+  color:white;
+  height:40px;
+}
+.portImg{
+    max-height:400px;
+    margin:auto;
+}
+.textBox{
+    margin:auto;
+    z-index:1;
+}
+.center{
+width:80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#welcomeImg{
+    height: 400px;
+    padding:0;
+}
+#welcomeTxt{
+    padding:10px;
+    background-color:black;
+    border-radius:50px;
+    font-size:50px;
+    position:absolute;
+    color:white;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+#welcome{
+    margin-top:50px;
+    -webkit-animation: myfirst 5s ; /* Chrome, Safari, Opera */
+    animation: myfirst 5s ;
+  }
+  /* Chrome, Safari, Opera */
+  @-webkit-keyframes myfirst {
+    from {opacity: 0.2;}
+    to {opacity: 1;}
+  }
+  /* Standard syntax */
+  @keyframes myfirst {
+    from {opacity: 0.2;}
+    to {opacity: 1;}
+  }
+  #portfolio{
+    padding:20px;
+padding-top:30px;
+  }
+  .container{
+
+    background:url("background.jpg");
+  }
