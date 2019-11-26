@@ -9,7 +9,7 @@ $(document).ready(function () {
             window.location.href = "https://franstrd87.github.io/the-noobs/";
         }
         else if (projectLink.toLowerCase() === "server example") {
-            window.location.href = "";
+            window.location.href = "https://gomez1ever1.github.io/Train-Schedule/";
         }
     })
 })
