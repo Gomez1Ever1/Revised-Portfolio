@@ -1,0 +1,12 @@
+{{#each project}}
+
+<div class="carousel-item active">
+    <img src={{this.image_link}} class="d-block w-100" alt={{this.project_name}}>
+    <div class="carousel-caption d-none d-md-block">
+        <a href={{this.link}} id={{this.project_name}}>
+            <h5>{{this.project_name}}</h5>
+        </a>
+    </div>
+</div>
+
+{{/each}}
