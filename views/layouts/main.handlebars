@@ -22,34 +22,42 @@
 </head>
 
 <body class="bg-secondary">
-    <header class=" text-white">
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
-            <h1 class="navbar-brand">Ever Santiago</h1>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="nav nav-pills">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#main-bio">About Me<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <br>
-    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="container">
-        <div class="row" id="welcome">
+    <div class="container">
+        <header class=" text-white">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark fixed-top">
+                <h1 class="navbar-brand">Ever Santiago</h1>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#main-bio">About Me<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <br>
+        <div id="welcome">
             <div class="col-12">
                 <div class="rounded" id="welcomeImg">
                     <h1 id="welcomeTxt">Welcome to my Page!</h1>
                 </div>
             </div>
+            <div class="instructions">
+                <p>Below are some of my best projects, using full-stack knowledge.
+                    <br> Scroll down to learn more!
+                </p>
+            </div>
+
         </div>
         <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
             <div class="carousel-inner">
@@ -64,7 +72,7 @@
                 </a>
             </div>
         </div>
-        <div class="col-lg-5 col-md-12 col-sm-12">
+        <div class="col-lg-5 col-md-12 col-sm-12 instructions">
             <div class="card bg-dark">
                 <div class="card-body" style="color:white">
                     <h2 class="card-title">

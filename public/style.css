@@ -1,5 +1,11 @@
-header{
-  color:yellow;
+.container{
+  display:flex;
+  flex-direction:column;
+  flex-wrap:wrap;
+  justify-content:space-around;
+  align-content:space-around;
+  margin-top:15px;
+  align-items:center;
 }
 #firstbio{
     padding:10px;
@@ -24,24 +30,33 @@ width:80%;
   margin-right: auto;
 }
 #welcomeImg{
-    height: 400px;
+    height: 150px;
+    width:100%;
     padding:0;
+}
+.instructions{
+  padding-top:40px;
 }
 #welcomeTxt{
     padding:10px;
     background-color:black;
     border-radius:50px;
     font-size:50px;
-    position:absolute;
     color:white;
+    position:absolute;
     top:50%;
     left:50%;
     transform: translate(-50%, -50%);
 }
+#projectImg{
+  object-fit:cover;
+  margin:auto;
+}
 #welcome{
-    margin-top:50px;
-    -webkit-animation: myfirst 7s ; /* Chrome, Safari, Opera */
+    -webkit-animation: myfirst 7s ; 
+    /* Chrome, Safari, Opera */
     animation: myfirst 7s ;
+    padding-top:100px;
   }
   /* Chrome, Safari, Opera */
   @-webkit-keyframes myfirst {
@@ -55,8 +70,4 @@ width:80%;
   }
   #portfolio{
     padding:20px;
-  }
-  .container{
-
-    background:url("background.jpg");
   }
