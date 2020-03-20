@@ -5,11 +5,10 @@ const db = require("../models");
 router.get("/", function (req, res) {
     getProjects()
         .then(function (data) {
-            console.log
             const allProjects = data.map(project => {
-                console.log(project)
                 return new objToOwnProp(project.dataValues);
             });
+            console.log(allProjects)
             const firstProject = allProjects[0];
             firstProject.className = "active";
             console.log(allProjects)
