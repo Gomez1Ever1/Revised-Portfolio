@@ -14,7 +14,7 @@ router.get("/", function (req, res) {
             console.log(allProjects)
             res.render("index", { project: allProjects });
         })
-        .catch(err => { reject(err); }
+        .catch(err => { console.log(err) }
         );
 });
 function getProjects() {
