@@ -8,10 +8,14 @@ router.get("/", function (req, res) {
             const allProjects = data.map(project => {
                 return new objToOwnProp(project.dataValues);
             });
-            allProjects[0].className = "active";
+
+            const firstProject = allProjects[0].className
+            firstProject = "active";
             console.log(allProjects)
             res.render("index", { project: allProjects });
-        });
+        })
+        .catch(err => { reject(err); }
+        );
 });
 function getProjects() {
     return new Promise((resolve, reject) => {
