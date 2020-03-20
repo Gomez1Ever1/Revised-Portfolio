@@ -7,6 +7,7 @@ router.get("/", function (req, res) {
         .then(function (data) {
             console.log
             const allProjects = data.map(project => {
+                console.log(project)
                 return new objToOwnProp(project.dataValues);
             });
             const firstProject = allProjects[0];
