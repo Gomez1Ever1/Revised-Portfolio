@@ -4,7 +4,7 @@ var app = express();
 //Get our database
 const db = (require("./models"));
 
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
