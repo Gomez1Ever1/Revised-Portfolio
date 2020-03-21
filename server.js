@@ -3,6 +3,7 @@ var PORT = process.env.PORT || 8080;
 var app = express();
 //Get our database
 const db = (require("./models"));
+const path = require("path");
 
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({ extended: true }));
