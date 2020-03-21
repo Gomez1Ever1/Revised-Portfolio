@@ -8,7 +8,6 @@ router.get("/", function (req, res) {
             const allProjects = data.map(project => {
                 return new objToOwnProp(project.dataValues);
             });
-            console.log(allProjects)
             const firstProject = allProjects[0];
             firstProject.className = "active";
             console.log(allProjects)
