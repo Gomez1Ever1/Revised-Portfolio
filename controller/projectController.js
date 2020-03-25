@@ -8,8 +8,6 @@ router.get("/", function (req, res) {
             const allProjects = data.map(project => {
                 return new objToOwnProp(project.dataValues);
             });
-            const firstProject = allProjects[0];
-            firstProject.className = "active";
             console.log(allProjects)
             res.render("index", { project: allProjects });
         })
@@ -40,6 +38,6 @@ var objToOwnProp = function (newModel) {
     this.project_name = newModel.project_name;
     this.link = newModel.link;
     this.image_link = newModel.image_link;
-    this.className = "";
+    this.href = newModel.href;
 };
 module.exports = router;

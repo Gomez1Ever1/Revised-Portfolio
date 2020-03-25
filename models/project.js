@@ -12,6 +12,10 @@ module.exports = function (sequelize, DataTypes) {
         image_link: {
             type: DataTypes.STRING,
             allowNull: false
+        },
+        href: {
+            type: DataTypes.STRING,
+            allowNull: false
         }
     })
     return Project;

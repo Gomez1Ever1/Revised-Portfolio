@@ -1,12 +1,6 @@
 {{#each project}}
-
-<div class="carousel-item {{this.className}}">
-    <img src={{this.image_link}} class="d-block img-fluid" id="projectImg" alt={{this.project_name}}>
-    <div class="carousel-caption d-none d-md-block">
-        <a href={{this.link}} id={{this.project_name}}>
-            <h5>{{this.project_name}}</h5>
-        </a>
-    </div>
-</div>
-
+<a class="carousel-item" href={{this.link}}>
+    <h3 id={{this.project_name}} class="link">{{this.project_name}}</h3>
+    <img src={{this.image_link}} id="projectImg" alt={{this.project_name}}>
+</a>
 {{/each}}
